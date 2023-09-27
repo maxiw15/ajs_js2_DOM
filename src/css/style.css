@@ -1,15 +1,13 @@
-/*.game-board {*/
-/*  width: 400px;*/
-/*  height: 400px;*/
-/*  display: grid;*/
-/*  grid-template-columns: repeat(4, 1fr);*/
-/*  grid-template-rows: repeat(4, 1fr);*/
-/*  gap: 5px;*/
-/*}*/
+.game-board {
+width: 500px;
+height: 500px;
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+}
 
-/*.cell {*/
-/*  background-color: #2F4F4F;*/
-/*  width: 120px;*/
-/*  height: 120px;*/
-/*}*/
-
+.cell {
+background-color: #2F4F4F;
+width: calc((500px - 15px) / 4);
+height: calc((500px - 15px) / 4);
+}
