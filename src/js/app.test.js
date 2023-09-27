@@ -1,11 +1,15 @@
-import demo from "./app";
+import getRandomNumber from "./app";
+import expect from "expect";
 
-describe("Пример теста", () => {
-  test.each([
-    { str: "Hello!", expected: "Demo: Hello!" },
-    { str: "", expected: "Demo: " },
-    { str: 100, expected: "Demo: 100" },
-  ])("demo($str)", ({ str, expected }) => {
-    expect(demo(str)).toBe(expected);
+describe("getRandomNumber", () => {test("should return a number between 0 and 15", () => {
+    const randomNumber = getRandomNumber();
+    expect(randomNumber).toBeGreaterThanOrEqual(0);
+    expect(randomNumber).toBeLessThanOrEqual(15);
+  });
+
+it("should not return the same number as previous count", () => {
+    const prev_count = 5;
+    const randomNumber = getRandomNumber(prev_count);
+    expect(randomNumber).not.toBe(prev_count);
   });
 });
