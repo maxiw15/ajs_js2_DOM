@@ -1,3 +1,15 @@
-body {
-    color: #999;
+.game-board {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
 }
+
+.cell {
+  background-color: darkslategrey;
+  width: 120px;
+  height: 120px;
+}
+
