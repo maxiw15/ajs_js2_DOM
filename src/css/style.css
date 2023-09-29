@@ -11,3 +11,8 @@ background-color: #2F4F4F;
 width: calc((500px - 15px) / 4);
 height: calc((500px - 15px) / 4);
 }
+
+body {
+  cursor: url("../img/hammer.png") 4 1, auto;
+}
+
