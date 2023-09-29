@@ -21,7 +21,9 @@ export default class Goblin {
   run(prev_count) {
     if (this.counter > 3) {
       alert("Вы проиграли");
+      this.winCount = 0;
       this.counter = 0;
+      this.counterGame.textContent = this.winCount;
     }
     this.nextCount = getRandomNumber(prev_count);
     this.cells[this.nextCount].appendChild(this.image);
