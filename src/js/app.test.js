@@ -1,8 +1,8 @@
-import getRandomNumber from "./app";
+import getRandomNumber from "./GetRandomNumber";
 import expect from "expect";
 
 describe("getRandomNumber", () => {test("should return a number between 0 and 15", () => {
-    const randomNumber = getRandomNumber();
+    const randomNumber = getRandomNumber(0);
     expect(randomNumber).toBeGreaterThanOrEqual(0);
     expect(randomNumber).toBeLessThanOrEqual(15);
   });
